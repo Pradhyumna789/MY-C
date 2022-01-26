@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+ int main() 
+
+{
+    
+   int t; // t is time in years
+   int r; // r is the rate of interest
+   int p; // p is the principal amount
+   
+   printf("What is the time?\n");
+   scanf("%d", &t);
+   
+   printf("What is the rate?\n");
+   scanf("%d", &r);
+   
+   printf("What is the principal amount?\n");
+   scanf("%d", &p);
+    
+    printf("The value of simple interest is %d", p*t*r);
+    
+    return 0;
+    
+     }
