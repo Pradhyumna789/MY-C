@@ -1,16 +1,87 @@
-// Program for type declaration instruction
+/* 
+
+Type Declaration instructions:
+
+Example of a type declaration instruction program
+
+#include <stdio.h>
+
+int main()
+
+{
+
+int a = 4;
+int b;
+int c;
+b = c = a;
+
+printf("The value of a is %d\n", a);
+printf("The value of b is %d\n", b);
+printf("The value of c is %d\n", c);
+
+return 0;
+
+
+}
+
+If the instructions are reverse ordered or written in a wrong oredered the compiler will show an error like in the following example
+
+#include <stdio.h>
+int main() {
+float b = a + 8.9
+float a = 1.1;
+printf("The value of b is %f\n", b);
+
+return 0;
+
+}
+
+The above program will not get compiled and executed successfully because the "float a" instruction should be executed first and then the instruction "float b". Without 
+knowing the value of a first how can the compiler execute the value of b which a + 1.8? It obviously cannot.
 
 
 
+Arithmetic Instruction:
+
+Example 1:
+
+int b = 2;
+int c = 3;
+int z = b * c;
+
+Example 2:
+
+int z;
+b * c = z;
+
+Example 1 is correct and Example 2 is incorrect because "z = b * c" can be written but not "b * c = z"
+
+Another Example:
+
+printf("5 when divided by 2 leaves the remainder as %d\n", 5%2); // Output is 1
+printf("-5 when divided by 2 leaves the remainder as %d\n", -5%2); // Output is -1
+printf("5 when divided by 2 leaves the remainder as %d\n", 5%-2); // Output is 1
+
+In the third line the output is 1 because only the sign of numerator is considered.
+
+Example Program For Performing exponentiation in C:
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+
+printf("The value of 2 to the power 5 is %f\n", pow(2, 5)); // Ouput will be 32 and only %f should be used because it is returning a real value
 
 
+return 0;
 
+}
 
+Arithmetic Conversion Example Program:
 
-
-
-
-
-
+printf("The value of 5/2 is %d\n", 5/2"); 
+printf("The value of 5/2 is %f\n", 5/2);
+printf("The value of 3.0/9 is %d\n", 3.0/9); // Output will be 0
 
 
