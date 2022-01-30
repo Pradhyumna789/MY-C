@@ -1,0 +1,235 @@
+/*
+
+Example Program on if statement:
+
+#include <stdio.h>
+
+int main() {
+    
+    int a;
+    
+ printf("Enter the number: ");
+ scanf("%d", &a);
+ 
+ if(a%2==0) {
+     
+     printf("%d is even\n");
+     
+     }
+    
+    return 0;
+    
+}
+
+
+
+
+Example Program for if-else statement:
+
+
+#include <stdio.h>
+
+int main() {
+    
+    int a;
+    
+ printf("Enter the number: ");
+ scanf("%d", &a);
+ 
+ if(a%2==0) {
+     
+     printf("%d is even\n");
+     
+     }
+     
+    else {
+         
+         printf("%d is odd\n");
+         
+     }
+     
+    
+    return 0;
+    
+}
+
+Example Program On Relational Operators:
+
+
+#include <stdio.h>
+
+int main() {
+    
+ int age;
+    
+ printf("Enter your age\n");
+ scanf("%d", &age);
+ 
+if(age>90) {
+    
+    printf("You cannot drive as you're above 90");
+    
+    
+}
+    
+    else {
+        
+        printf("You can drive");
+        
+    } 
+    
+    return 0;
+    
+}
+
+
+
+In C Language if any non-zero number is assigned to an assignment operator it is automatically considered as true
+
+OUTPUT FOR THE FOLLOWING PROGRAM:
+
+Enter your age:
+90
+Half century
+
+
+#include <stdio.h>
+
+int main() {
+
+int age;
+
+printf("Enter your age:\n");
+scanf("%d", &age);
+
+if(age=90) {
+
+printf("Half century\n"); // "==" is used for equality check and "=" is used as an assignment operator
+
+
+}
+
+
+return 0;
+
+}
+
+
+
+Example Program On Logical Operators:
+
+Example 1:
+
+#include <stdio.h>
+
+int main() {
+
+int age;
+
+printf("Enter your age:\n");
+scanf("%d", &age);
+
+if(age>=18 && age<=90) {
+
+printf("You are above 18 and below 90 and so you can drive"); 
+
+
+}
+
+else {
+    
+    printf("You cannot drive");
+    
+}
+
+return 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
