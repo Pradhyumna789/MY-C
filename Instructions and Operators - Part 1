@@ -78,10 +78,77 @@ return 0;
 
 }
 
-Arithmetic Conversion Example Program:
+Arithmetic Conversion Example Programs:
 
 printf("The value of 5/2 is %d\n", 5/2"); 
 printf("The value of 5/2 is %f\n", 5/2);
 printf("The value of 3.0/9 is %d\n", 3.0/9); // Output will be 0
+
+Examples on operator precedency topic:
+
+In the following program first 3*x and 4*y values are calculated and then the subtraction operation is done between those two values which gives the final result as -24
+AS the top most priority in this case is given to multiplication operators and then to the subtraction operators.
+
+Operators of higher priority are evaluated first in the absence of parenthesis.
+
+#include <stdio.h>
+
+int main() {
+
+int x = 4;
+int y = 9;
+
+printf("The value of [3*x - 4*y] is %d\n", 3*x - 4*y); // Output for this program will be obviously -24
+
+return 0;
+
+
+In the following program
+
+The value in the parenthesis will be evaluated first and then this calculated value is multiplied with 3 which gives the total result as -204
+
+#include <stdio.h>
+
+int main() {
+
+int x = 4;
+int y = 9;
+
+printf("The value of [3*(x - 8*y)] is %d\n", 3*(x - 8*y)); // In this case the output will be -204
+
+return 0;
+
+}
+
+
+Example program of Tie between Operators:
+
+When there is a Tie between Two Operators which happens when there are two same priority level operators involved in the overall operation we see something called as 
+associativity.
+
+Explanation of Operator Associativity: 
+When operators of equal priority are present in an expression, the tie is taken care of by associativity.
+
+#include <stdio.h>
+
+int main() {
+
+int x = 2;
+int y = 3;
+
+printf("The value of 8*y / 3*x is %d", 8*y / 3*x); // This program will give the wrong output which is 16. *, / operators follows left to right associativity(Explanation is given below)
+
+return 0;
+
+}
+
+Explanation for what happened in the above program in detail: 8*3/3*2 = 24/3*2 = 8*2 = 16 
+
+
+
+
+
+
+
 
 
