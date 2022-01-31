@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main() {
+
+int physics, math, philosophy;
+
+float total;
+
+printf("Enter your physics score\n");
+scanf("%d", &physics);
+
+printf("Enter your math score\n");
+scanf("%d", &math);
+
+printf("Enter your philosophy score\n");
+scanf("%d", &philosophy);
+
+total = (physics + math + philosophy)/3;
+
+if(total<40 || physics<33 || math<33 || philosophy<33) {
+    
+    
+    printf("Your total percentage is %f and hence you are failed\n", total);
+    
+    
+}
+else {
+
+ printf("You total percentage is %f and hence you are passed\n", total);
+
+}
+
+return 0;
+
+}
+
+
+
+
