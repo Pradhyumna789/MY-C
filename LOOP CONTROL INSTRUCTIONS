@@ -1,1 +1,56 @@
+/*
+
+Example Program on while loop:
+
+#include <stdio.h>
+
+int main()
+{
+    
+    int number;
+    
+  printf("Enter a number(0-10)\n");
+  scanf("%d", &number);
+  
+  while (number<10) {
+      
+      printf("%d\n", number);
+      number++;
+      
+  }
+  
+    return 0;
+    
+}
+
+Example Program on infinite while loop:
+
+If the condition never becomes false, the while loop keeps getting executed. Such a loop is known as an infinite loop.
+
+#include <stdio.h>
+
+int main() {
+    
+    int number;
+    
+    printf("Enter a number\n");
+    scanf("%d", &number);
+    
+    while (number>10) {
+        
+        printf("%d\n", number);
+        number++;
+        
+        }
+    
+    
+    return 0;
+    
+}
+
+
+
+
+
+
 
