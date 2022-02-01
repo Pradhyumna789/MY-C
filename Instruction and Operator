@@ -332,6 +332,76 @@ Question: Write a program to find the grade of a student given his marks based o
 Program for this question is written below:
 
 
+#include <stdio.h>
+
+int main()
+{
+    
+    int marks;
+    
+    printf("Enter your marks(0-100)\n");
+    scanf("%d", &marks);
+    
+    switch (marks) {
+        
+        case 1: 
+        
+        if (marks>=90 && marks<=100) {
+            
+            printf("Your Grade is A as your mark range is between 90 and 100\n");
+            
+            
+        }
+        
+        break;
+        
+        case 2:
+        
+        if (marks>=80 && marks<=90) {
+            
+            
+            printf("Your Grade is B as your mark range is between 80 and 90\n");
+            
+            
+        }
+        
+        break;
+        
+        case 3:
+        
+        if (marks>=70 && marks<=80) {
+            
+            
+            printf("Your Grade is C as your mark range is between 70 and 80\n");
+            
+            
+        }
+        
+        break;
+        
+        case 4:
+        
+        if(marks>=60 && marks<=70) {
+            
+            printf("Your Grade is D as your mark range is between 60 and 70\n");
+            
+            
+            
+        }
+        
+        break;
+        
+        default:
+        
+            printf("Your Grade is F as your marks range is below 70\n");
+        
+        
+        }
+    
+  
+    return 0;
+    
+}
 
 
 
