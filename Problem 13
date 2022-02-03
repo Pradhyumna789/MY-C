@@ -1,1 +1,21 @@
+#include <stdio.h>
 
+int main()
+{
+     
+     int num, i, sum = 0;
+     
+     printf("Enter a positive number: ");
+     scanf("%d", &num);
+ 
+ for(i=0; i<=num; i++) {
+     
+     sum = sum + i; // on each iteration i value will be added to the sum variable
+     
+ }
+ 
+ printf("Sum of the first %d numbers is: %d", num, sum);
+ 
+ return 0;
+ 
+}
